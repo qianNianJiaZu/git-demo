@@ -8,12 +8,22 @@
 </head>
 
 <body>
-    第二次推送
-    第三次
-    第四次
-    第五次
 
-
+    <script>
+        function demo() {
+            var arr = []
+            for (var i = 0; i < 10; i++) {
+                arr[i] = function () {
+                    document.write(i + ' ')
+                }
+            }
+            return arr
+        }
+        var res = demo()
+        for (var j = 0; j < 10; j++) {
+            res[j]()
+        }
+    </script>
 </body>
 
 </html>
